@@ -9,8 +9,9 @@ input[type='submit'], button, [aria-label]{
   }
   table, th, td {
     border:1px solid black !important;
-
-   
+  }
+  html{
+      height: 100%;
   }
   #name {
     cursor: pointer;
@@ -19,6 +20,8 @@ input[type='submit'], button, [aria-label]{
     cursor: pointer;
   }
   body{
+      height: 100%;
+      overflow-y: hidden;
       text-align: center !important;
       background-image: url("https://img.freepik.com/free-vector/botanical-cannabis-leaf-background_23-2148778834.jpg?size=626&ext=jpg&ga=GA1.2.1482984194.1639872000");
       background-position: center; /* Center the image */
@@ -32,7 +35,6 @@ input[type='submit'], button, [aria-label]{
   }
 #counter{
    color: white;
-   background-color: red;
     
 }
  .editing{
@@ -49,6 +51,9 @@ input[type='submit'], button, [aria-label]{
  footer{
      background-color: green;
      color: white;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
  }
 
  /* modal1 */
