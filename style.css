@@ -10,8 +10,13 @@ input[type='submit'], button, [aria-label]{
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
+    padding-top: 250px;
+    background-color: white; /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  #editing{
+      background-color: white;
+      padding: 150px;
   }
   #counter {
       font-weight: bold;
