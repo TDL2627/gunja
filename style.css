@@ -114,5 +114,9 @@ input[type='submit'], button, [aria-label]{
   @media only screen and (max-width: 600px) {
     table {
         margin-top: 50px;
+        width: 100%;
+    }
+    html{
+        height: 100%;
     }
   }
