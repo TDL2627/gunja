@@ -34,7 +34,7 @@ input[type='submit'], button, [aria-label]{
      
   }
 #counter{
-   color: white;
+   color: black;
     
 }
  .editing{
@@ -93,6 +93,9 @@ input[type='submit'], button, [aria-label]{
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+  #myBtn{
+    cursor:pointer;
   }
   @media only screen and (max-width: 600px) {
     table {
