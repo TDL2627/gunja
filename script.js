@@ -51,7 +51,7 @@ getCanibus = () => {
       data += '<td>' + canibus[i].name + '</td>';
       data += '<td>' + canibus[i].strain + '</td>';
       data += '<td>' + 'R'+ canibus[i].price + '</td>';
-      data += '<td><button class="editing" onclick="editWeed(' + i + ')">Edit</button></td>';
+      data += '<td><button class="editing myBtn1" onclick="editWeed(' + i + ')">Edit</button></td>';
       data += '<td><button class="deleting" onclick="deleteWeed(' + i + ')">Delete</button></td>';
       data += '</tr>';
 
