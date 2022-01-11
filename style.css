@@ -18,9 +18,7 @@ input[type='submit'], button, [aria-label]{
       background-color: white;
       padding: 150px;
   }
-  #counter {
-      font-weight: bold;
-  }
+
   table, th, td {
     border:1px solid black !important;
   }
@@ -118,5 +116,22 @@ input[type='submit'], button, [aria-label]{
     }
     html{
         height: 100%;
+    }
+  }
+  .glow {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e660, 0 0 40px #08e600, 0 0 50px #139424, 0 0 60px #139424, 0 0 70px #139424;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #307a2e, 0 0 40px #307a2e, 0 0 50px #307a2e, 0 0 60px #307a2e, 0 0 70px #307a2e, 0 0 80px #307a2e;
     }
   }

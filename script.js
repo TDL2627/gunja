@@ -2,6 +2,19 @@
 
 // CREATE, READ, UPDATE, DELETE
 var weedList = document.getElementById('weeds');
+let dagga = new Promise(resolve => {
+  fetch("weeds.json")
+  .then(res => {
+    if(res.status !== 200) {
+      throw new Error('Cannot fetch the weeds');
+    }
+    return res.json()
+  })
+  .then(data => resolve(data))
+  .catch(err => alert(err.message))
+});
+
+
 let canibus = [
   {
     name: 'Cheese',
@@ -9,9 +22,19 @@ let canibus = [
     price:140
   },
   {
+    name: 'Grade',
+    strain: 'Local',
+    price:20
+  },
+  {
+    name: 'Super Turrie',
+    strain: 'Home Grown',
+    price:100
+  },
+  {
     name: 'Skunk',
     strain: 'Sativa',
-    price:20
+    price:15
   },
   {
     name: 'Turrie',

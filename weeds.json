@@ -1,0 +1,22 @@
+[
+    {
+      "name": "Cheese",
+      "strain": "Indica",
+      "price":140
+    },
+    {
+      "name": "Skunk",
+      "strain": "Sativa",
+      "price":20
+    },
+    {
+      "name": "Turrie",
+      "strain": "Local",
+      "price":10
+    },
+    {
+      "name": "Super Saiyin",
+      "strain": "Home Grown",
+      "price": 300
+    }
+  ]
