@@ -2,7 +2,7 @@
 
 // CREATE, READ, UPDATE, DELETE
 var weedList = document.getElementById('weeds');
-let dagga = new Promise(resolve => {
+let weeds = new Promise(resolve => {
   fetch("weeds.json")
   .then(res => {
     if(res.status !== 200) {
@@ -12,8 +12,9 @@ let dagga = new Promise(resolve => {
   })
   .then(data => resolve(data))
   .catch(err => alert(err.message))
+ 
 });
-
+console.log(weeds);
 
 let canibus = [
   {

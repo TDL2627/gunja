@@ -65,7 +65,7 @@ input[type='submit'], button, [aria-label]{
  }
 
  footer{
-     background-color: green;
+     background-color: rgb(25,135,84);
      color: white;
      position: fixed;
      bottom: 0;
