@@ -18,6 +18,10 @@ input[type='submit'], button, [aria-label]{
       background-color: white;
       padding: 150px;
   }
+  .thead{
+      background-color: green !important;
+      color: white;
+  }
 
   table, th, td {
     border:1px solid black !important;
