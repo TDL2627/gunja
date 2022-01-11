@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>GUNJA</title>
+</head>
+<body>
+  
+    <h1>My BUD</h1>
+    <form action="javascript:void(0);" onsubmit="searchbar()"> 
+      <div>Search for a name of bud:</div>
+      <input type="text" id="search" placeholder="Search..." required>
+      <input type="submit" value="Search">
+      <input type="submit" value="Reset" onclick="location.reload()">
+    </form>
+    <p></p>
+    <div><label for="">Add a new bud</label></div>
+    <form action="javascript:void(0);" onsubmit="addWeed()"> 
+      <input type="text" id="add-weed" placeholder="Add new name of weed" required>
+      <input type="number" id="add-price" placeholder="Add the price" required >
+      <select name="add-continent" id="add-strain" required>
+        <option value="" disabled></option>
+        <option value="Indica">Indica</option>
+        <option value="Sativa">Sativa</option>
+        <option value="Local">Local</option>
+        <option value="Home Grown">Home Grown</option>
+      </select>
+
+      <input type="submit" value="Add">
+    </form>
+  
+    <div id="editForm">
+      <h3>Edit Bud</h3>
+      <form action="javascript:void(0);" id="saveEdit">
+        <input type="text" id="edit-weed">
+        <input type="text" id="edit-strain">
+        <input type="number" id="edit-price">
+        <input type="submit" value="Edit" /> <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+      </form>
+    </div>
+  
+    <p id="counter"></p>
+  
+    <div id="sorting">
+      <h3>SORT BY</h3>
+      <button onclick="sortCanibus()">Name of bud</button>
+      <button onclick="sortPrice()">Price</button>
+    </div>
+    
+    <table>
+      <tr>
+        <th id="name" >Name</th>
+        <th>Strain</th>
+        <th >Price</th>
+        <th colspan="2">OPPS</th>
+      </tr>
+        <tbody id="weeds">
+        </tbody>
+    </table>
+  
+    <script src="script.js"></script>
+  </body>
+  </html>

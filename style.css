@@ -1,0 +1,31 @@
+input[type='submit'], button, [aria-label]{
+    cursor: pointer;
+  }
+  #editForm{
+    display: none;
+  }
+  #counter {
+      font-weight: bold;
+  }
+  table, th, td {
+    border:1px solid black;
+   
+  }
+  #name {
+    cursor: pointer;
+  }
+  #continent {
+    cursor: pointer;
+  }
+  body{
+      text-align: center;
+  }
+  table{
+      margin-left: 750px;
+      margin-top: 50px;
+  }
+  @media only screen and (max-width: 600px) {
+    table {
+     margin-left: 100px;
+    }
+  }
