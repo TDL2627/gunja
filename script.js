@@ -25,6 +25,8 @@ let canibus = [
   }
 ];
 
+console.log(canibus)
+
 // Counter: Number of canibus in the array
 countCanibus = data => {
   var count = document.getElementById('counter');
