@@ -24,6 +24,16 @@ input[type='submit'], button, [aria-label]{
      
       margin-top: 50px;
   }
+
+ .editing{
+     background-color: yellow;
+     border-radius: 25px;
+ } 
+ .deleting{
+     background-color: red;
+     color: white;
+     border-radius: 25px;
+ }
   @media only screen and (max-width: 600px) {
     table {
         margin-top: 50px;

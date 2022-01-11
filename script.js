@@ -45,12 +45,15 @@ getCanibus = () => {
   if (canibus.length > 0) {
     for (i = 0; i < canibus.length; i++) {
       data += '<tr>';
+      data += '<td>' + [i+1] +'</td>';
       data += '<td>' + canibus[i].name + '</td>';
       data += '<td>' + canibus[i].strain + '</td>';
       data += '<td>' + 'R'+ canibus[i].price + '</td>';
-      data += '<td><button onclick="editWeed(' + i + ')">Edit</button></td>';
-      data += '<td><button onclick="deleteWeed(' + i + ')">Delete</button></td>';
+      data += '<td><button class="editing" onclick="editWeed(' + i + ')">Edit</button></td>';
+      data += '<td><button class="deleting" onclick="deleteWeed(' + i + ')">Delete</button></td>';
       data += '</tr>';
+
+     
     }
   }
   countCanibus(canibus.length);
@@ -136,7 +139,7 @@ searchbar = () => {
       throw new Error('Nothing was entered in the search bar');
     }
     // Filter all the canibus in the array with value typed into the input field
-    let canibusFound = canibus.filter(weed => weed.name.toLowerCase().includes(searchedweed.toLowerCase()));
+    let canibusFound = canibus.filter(weed => weed.name.toLowerCase().includes(searchedweed.toLowerCase()) || weed.strain.toLowerCase().includes(searchedweed.toLowerCase()) );
 
     if(canibusFound.length === 0) {
       throw new Error('No canibus were found');
